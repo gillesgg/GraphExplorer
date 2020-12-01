@@ -1,0 +1,10 @@
+Resources
+| where type == 'microsoft.containerservice/managedclusters'
+| join kind=leftouter (ResourceContainers | where type=='microsoft.resources/subscriptions' | project SubscriptionName=name, subscriptionId) on subscriptionId
+| extend
+  Id = id,
+  Name = name,
+  Type = type,
+  Version = tostring(properties.kubernetesVersion),
+  Location = tostring(location)
+| project Id, Name, Version, SubscriptionName, Type, Location

@@ -1,0 +1,3 @@
+Resources
+| where type contains 'classic' 
+| project name,type,subscriptionId, resourceGroup, id | order by name asc

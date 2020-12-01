@@ -1,0 +1,2 @@
+ healthresources
+| project id, name, type, location, subscriptionId, properties.ImpactMitigationTime, properties.ImpactStartTime,properties.Status, properties.Title, properties.Summary

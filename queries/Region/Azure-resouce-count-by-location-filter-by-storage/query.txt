@@ -1,0 +1,1 @@
+where type =~ 'microsoft.storage/storageaccounts' | project name, type, location | order by location asc

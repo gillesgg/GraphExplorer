@@ -1,0 +1,3 @@
+advisorresources
+| where type == "microsoft.advisor/recommendations"
+| project subscriptionId, properties.category,properties.impact, name , properties.shortDescription.problem, properties.shortDescription.solution

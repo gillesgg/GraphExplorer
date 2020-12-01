@@ -1,0 +1,1 @@
+summarize Count=count() by location 

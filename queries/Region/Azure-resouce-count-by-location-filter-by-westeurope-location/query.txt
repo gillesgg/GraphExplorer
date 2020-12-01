@@ -1,0 +1,1 @@
+where location =~ 'westeurope' | project name, type, location | order by location asc
